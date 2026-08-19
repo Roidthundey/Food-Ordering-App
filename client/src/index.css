@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Open Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --color-brand-primary: #30AFFF;
+  --color-brand-accent: #92EEFF;
+  --color-brand-positive: #D8FFC5;
+  --color-brand-success: #C4F7CA;
+
+  --color-brand-dark: #17202A;
+  --color-brand-light: #F5F7F8;
+  --color-brand-gray: #66727D;
+  --color-brand-border: #DDE4E8;
+}
