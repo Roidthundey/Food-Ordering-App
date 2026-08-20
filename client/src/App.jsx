@@ -1,4 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
+import { useEffect } from 'react'
+import { supabase } from './lib/supabase'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 
@@ -9,6 +11,23 @@ import Checkout from './pages/Checkout'
 import Orders from './pages/Orders'
 
 function App() {
+  useEffect(() => {
+    const testConnection = async () => {
+      const { data, error } = await supabase
+        .from('vendors')
+        .select('*')
+        .limit(1)
+
+      if (error) {
+        console.error('Supabase connection failed:', error)
+      } else {
+        console.log('Supabase connection successful:', data)
+      }
+    }
+
+    testConnection()
+  }, [])
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />

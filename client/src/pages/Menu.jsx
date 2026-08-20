@@ -5,16 +5,30 @@ import MenuCard from '../components/menu/MenuCard'
 function Menu() {
   const [items, setItems] = useState([])
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null)
 
   useEffect(() => {
-    getMenuItems().then((data) => {
-      setItems(data)
-      setLoading(false)
-    })
+    const loadMenu = async () => {
+      try {
+        const data = await getMenuItems()
+        setItems(data)
+      } catch (error) {
+        console.error('Failed to load menu:', error)
+        setError('Unable to load menu. Please try again.')
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    loadMenu()
   }, [])
 
   if (loading) {
     return <p className="p-8 text-gray-500">Loading menu...</p>
+  }
+
+  if (error) {
+    return <p className="p-8 text-red-500">{error}</p>
   }
 
   return (

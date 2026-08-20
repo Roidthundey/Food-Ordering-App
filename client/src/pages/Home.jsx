@@ -22,7 +22,12 @@ const categories = [
 ]
 
 const locations = [
-  'Lagos', 'Ibadan', 'Abuja', 'Osogbo', 'Ile-Ife', 'Ilorin',
+  'Lagos',
+  'Ibadan',
+  'Abuja',
+  'Osogbo',
+  'Ile-Ife',
+  'Ilorin',
 ]
 
 function Home() {
@@ -30,11 +35,9 @@ function Home() {
 
   return (
     <div>
-      {/* Hero section */}
+      {/* Hero */}
       <section className="bg-brand-primary text-white px-6 py-16 md:py-20 overflow-hidden">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-center">
-
-          {/* Hero text */}
           <div className="text-center md:text-left">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Good food is closer than you think.
@@ -53,28 +56,17 @@ function Home() {
             </Link>
           </div>
 
-          {/* Jollof rice image */}
           <div className="flex justify-center md:justify-end">
-            <div className="relative">
-              <img
-                src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=900&q=85"
-                alt="Delicious jollof rice"
-                className="w-full max-w-md h-80 md:h-96 object-cover rounded-3xl shadow-2xl"
-              />
-
-              {/* Floating label */}
-              <div className="absolute -bottom-4 left-4 md:-left-4 bg-white text-brand-dark px-5 py-3 rounded-2xl shadow-lg">
-                <p className="text-sm font-semibold">
-                  
-                </p>
-              </div>
-            </div>
+            <img
+              src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=900&q=85"
+              alt="Delicious jollof rice"
+              className="w-full max-w-md h-80 md:h-96 object-cover rounded-3xl shadow-2xl"
+            />
           </div>
-
         </div>
       </section>
 
-      {/* Food categories */}
+      {/* Categories */}
       <section className="max-w-5xl mx-auto px-6 py-14">
         <h2 className="text-2xl font-bold text-brand-dark mb-8 text-center">
           Browse by Category
@@ -99,7 +91,7 @@ function Home() {
         </div>
       </section>
 
-      {/* Popular meals */}
+      {/* Popular Meals */}
       <section className="bg-brand-light px-6 py-14">
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center justify-between mb-8">
@@ -193,7 +185,7 @@ function Home() {
         </div>
       </section>
 
-      {/* CTA footer */}
+      {/* CTA */}
       <section className="px-6 py-14 text-center">
         <h2 className="text-2xl font-bold text-brand-dark">
           Hungry already?

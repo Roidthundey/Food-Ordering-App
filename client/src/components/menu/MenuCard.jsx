@@ -22,7 +22,9 @@ function MenuCard({ item }) {
 </span>
         </div>
 
-        <p className="text-sm text-gray-500 mt-1">{item.vendor}</p>
+        <p className="text-sm text-gray-500 mt-1">
+  {item.vendors?.name}
+</p>
         <p className="text-sm text-gray-600 mt-2 flex-1">{item.description}</p>
 
         <button
