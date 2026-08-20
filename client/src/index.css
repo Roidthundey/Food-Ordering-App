@@ -1,15 +1,17 @@
 @import "tailwindcss";
 
 @theme {
+
   --font-sans: "Open Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 
-  --color-brand-primary: #30AFFF;
-  --color-brand-accent: #92EEFF;
-  --color-brand-positive: #D8FFC5;
-  --color-brand-success: #C4F7CA;
+  /* FoodiePoint Brand Colours */
+  --color-brand-primary: #F97316;
+  --color-brand-accent: #FDBA74;
+  --color-brand-positive: #DCFCE7;
+  --color-brand-success: #BBF7D0;
+  --color-brand-dark: #1F2937;
+  --color-brand-light: #FFF7ED;
+  --color-brand-gray: #6B7280;
+  --color-brand-border: #FED7AA;
 
-  --color-brand-dark: #17202A;
-  --color-brand-light: #F5F7F8;
-  --color-brand-gray: #66727D;
-  --color-brand-border: #DDE4E8;
 }

@@ -10,12 +10,12 @@ function Cart() {
       <div className="p-8 text-center">
         <h1 className="text-2xl font-bold text-gray-900 mb-2">Your cart is empty</h1>
         <p className="text-gray-500 mb-6">Add some delicious food to get started.</p>
-        <Link
-          to="/menu"
-          className="inline-block bg-green-600 text-white font-medium px-6 py-3 rounded-xl hover:bg-green-700 transition-colors"
-        >
-          Browse Menu
-        </Link>
+       <Link
+  to="/checkout"
+  className="block w-full text-center mt-4 bg-brand-primary text-white font-semibold py-3 rounded-xl hover:opacity-90 transition-colors"
+>
+  Proceed to Checkout
+  </Link>
       </div>
     )
   }
@@ -77,7 +77,7 @@ function Cart() {
 
       <Link
   to="/checkout"
-  className="block text-center mt-4 bg-brand-primary text-white font-semibold py-3 rounded-xl hover:opacity-90 transition-colors"
+  className="inline-block bg-brand-primary text-white font-medium px-6 py-3 rounded-xl hover:opacity-90 transition-colors"
 >
   Proceed to Checkout
 </Link>
@@ -86,3 +86,5 @@ function Cart() {
 }
 
 export default Cart
+
+
